@@ -28,6 +28,33 @@ nav .sidenav-trigger{
     float: right;
 }
 
+nav .brand-logo{
+    width: 100px;
+    top: 0.5rem;
+}
+nav .brand-logo img{
+    width: 100%;
+}
+
+#mobile-demo{
+    background: linear-gradient(#151f20c5 , #273335b9 , #112325d3) ,
+        url(../images/sideBack.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#mobile-demo li{
+    width: 100%;
+}
+#mobile-demo li a{
+    text-align: center;
+    color: white;
+}
+
 @media(min-width:992px){
     nav .brand-logo{
         right: unset !important;
