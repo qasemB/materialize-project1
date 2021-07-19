@@ -7,34 +7,43 @@
     <link rel="stylesheet" href="assets/css/materialize.min.css">
     <link rel="stylesheet" href="assets/css/materialize-rtl.css">
     <link rel="stylesheet" href="assets/fontawesome/css/all.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Document</title>
+    <title>مدیریت ساختمان</title>
 </head>
 <body dir="rtl">
 
      <!-- header start --------------- -->
-    <nav class="cyan lighten-2">
-        <div class="nav-wrapper">
+     <div class="navbar-fixed">
+        <nav class="cyan lighten-2">
           <a href="#!" class="brand-logo">
             <img src="assets/images/logo.png" alt="">
           </a>
-          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-          <ul class="right hide-on-med-and-down">
-            <li><a href="sass.html">Sass</a></li>
-            <li><a href="badges.html">Components</a></li>
-            <li><a href="collapsible.html">Javascript</a></li>
-            <li><a href="mobile.html">Mobile</a></li>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fas fa-bars"></i></a>
+          <ul class="navbar_ul right hide-on-med-and-down main_ul_navbar">
+            <li class="tab"><a href="#content1">داشبورد</a></li>
+            <li class="tab"><a href="#content2">مدیریت مخارج</a></li>
+            <li class="tab"><a href="#content3">افزودن هزینه</a></li>
+            <li class="tab"><a href="#content4">مدیریت همسایگان</a></li>
+            <li class="tab"><a href="#content5">پیام ها</a></li>
           </ul>
-        </div>
-    </nav>    
-    <ul class="sidenav" id="mobile-demo">
-        <li><a href="sass.html">Sass</a></li>
-        <li><a href="badges.html">Components</a></li>
-        <li><a href="collapsible.html">Javascript</a></li>
-        <li><a href="mobile.html">Mobile</a></li>
+        </nav>    
+      </div>
+    <ul class="sidenav main_ul_navbar" id="mobile-demo">
+        <li class="tab"><a href="#content1">داشبورد</a></li>
+        <li class="tab"><a href="#content2">مدیریت مخارج</a></li>
+        <li class="tab"><a href="#content3">افزودن هزینه</a></li>
+        <li class="tab"><a href="#content4">مدیریت همسایگان</a></li>
+        <li class="tab"><a href="#content5">پیام ها</a></li>
     </ul>
      <!-- header end --------------- -->
+
+     <!-- <section class="main_content"> -->
+       <div id="content1" class="item_content orange"></div>
+       <div id="content2" class="item_content yellow"></div>
+       <div id="content3" class="item_content red"></div>
+       <div id="content4" class="item_content purple"></div>
+       <div id="content5" class="item_content green"></div>
+     <!-- </section> -->
 
 
 

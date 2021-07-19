@@ -29,7 +29,7 @@ nav .sidenav-trigger{
 }
 
 nav .brand-logo{
-    width: 100px;
+    width: 80px;
     top: 0.5rem;
 }
 nav .brand-logo img{
@@ -53,6 +53,19 @@ nav .brand-logo img{
 #mobile-demo li a{
     text-align: center;
     color: white;
+}
+
+.navbar_ul{
+    display: flex;
+}
+
+.item_content{
+    width: 100%;
+    height: 100%;
+}
+
+.tabs-content.carousel.carousel-slider{
+    height: calc(100vh - 64px) !important;
 }
 
 @media(min-width:992px){
