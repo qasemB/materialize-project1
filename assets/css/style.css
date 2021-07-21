@@ -68,6 +68,10 @@ nav .brand-logo img{
     height: calc(100vh - 64px) !important;
 }
 
+.fixed-action-btn{
+    right: unset !important;
+}
+
 @media(min-width:992px){
     nav .brand-logo{
         right: unset !important;
