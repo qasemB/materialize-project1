@@ -72,6 +72,10 @@ nav .brand-logo img{
     right: unset !important;
 }
 
+.active{
+    color: purple;
+}
+
 @media(min-width:992px){
     nav .brand-logo{
         right: unset !important;
