@@ -13,4 +13,16 @@ document.addEventListener('DOMContentLoaded', function() {
     M.FloatingActionButton.init(actionButton, {
         toolbarEnabled: true,
     });
+
+    var quickAccessNodes = Array.prototype.slice.call(document.querySelectorAll('.quick_access_items'));
+
+    for (const item of quickAccessNodes) {
+        item.addEventListener('click' , function(){
+            let index = quickAccessNodes.indexOf(item) + 1;
+            let menuItemArray = document.querySelectorAll('.menu_item_list');
+            setTimeout(function(){
+                menuItemArray[index].click();
+            } , 100)
+        })
+    }
 });
