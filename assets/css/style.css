@@ -110,6 +110,18 @@ nav .brand-logo img{
     background: linear-gradient(180deg, rgba(0,188,212,1) 0%, rgba(0,96,100,1) 25%, rgba(255,255,255,1) 25%);
 }
 
+.px_4{
+padding-left: 4rem !important;
+padding-right: 4rem !important;
+}
+
+@media(min-width:601px){
+    .px_md_5{
+        padding-left: 5rem !important;
+        padding-right: 5rem !important;
+    }
+}
+
 @media(min-width:992px){
     nav .brand-logo{
         right: unset !important;

@@ -40,17 +40,35 @@
      <!-- <section class="main_content"> -->
        <div id="content1" class="item_content orange">
          <div class="row">
-           <div class="col s12 m6 l4 progressbar_grid">
+
+          
+           <div class="col s12 m6 l4 progressbar_grid px_4 px_md_5">
              <span class="white-text">
                <svg viewbox="0 0 100 100" style="filter: drop-shadow(0 0 5px black);">
                 <circle cx="50" cy="50" r="45" fill="rgba(255,255,255,0.8)" />
-                <path fill="none" stroke-linecap="round" stroke-width="6" stroke="#006064"
+                <path id="payProgressPath" fill="none" stroke-linecap="round" stroke-width="6" stroke="#006064"
                     stroke-dasharray="126.5 , 126.5"
                     d="M50 10
                       a 40 40 0 0 1 0 80
                       a 40 40 0 0 1 0 -80"/>
-                <text x="50" y="35" fill="#006064" text-anchor="middle" dy="7" font-size="20">50%</text>
+                <text id="payProgressText" x="50" y="35" fill="#006064" text-anchor="middle" dy="7" font-size="20">50%</text>
                 <text x="50" y="55" fill="#006064" text-anchor="middle" dy="7" font-size="10">پرداخت ها</text>
+               </svg>
+             </span>
+           </div>
+
+
+           <div class="col s12 m6 l4 progressbar_grid px_4 px_md_5">
+             <span class="white-text">
+               <svg viewbox="0 0 100 100" style="filter: drop-shadow(0 0 5px black);">
+                <circle cx="50" cy="50" r="45" fill="rgba(255,255,255,0.8)" />
+                <path id="floorProgressPath" fill="none" stroke-linecap="round" stroke-width="6" stroke="#006064"
+                    stroke-dasharray="126.5 , 126.5"
+                    d="M50 10
+                      a 40 40 0 0 1 0 80
+                      a 40 40 0 0 1 0 -80"/>
+                <text id="floorProgressText" x="50" y="35" fill="#006064" text-anchor="middle" dy="7" font-size="20">50%</text>
+                <text x="50" y="55" fill="#006064" text-anchor="middle" dy="7" font-size="10"> واحد های پر</text>
                </svg>
              </span>
            </div>

@@ -25,4 +25,28 @@ document.addEventListener('DOMContentLoaded', function() {
             } , 100)
         })
     }
+    animateProgress('payProgressPath' , 'payProgressText' , 50)
+    animateProgress('floorProgressPath' , 'floorProgressText' , 90)
+    function animateProgress(PathDomId , textDomId , percent){
+        let startPercent = 0;
+        let maxPercent = percent;
+
+        let startProgress = 0;
+        let maxProgress = 253;
+
+        let progressInterval = setInterval(function(){
+            if (startPercent <= maxPercent) {
+                document.getElementById(PathDomId).setAttribute('stroke-dasharray' , `${startProgress} , ${maxProgress}`)
+
+                document.getElementById(textDomId).innerHTML = startPercent+"%";
+
+                startPercent += 1
+                startProgress += 2.53
+                maxProgress -= 2.53
+            }else{
+                clearInterval(progressInterval);
+            }
+
+        } , 25)
+    }
 });
