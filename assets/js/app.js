@@ -14,6 +14,34 @@ document.addEventListener('DOMContentLoaded', function() {
         toolbarEnabled: true,
     });
 
+
+
+
+
+
+
+
+    var selectElem = document.querySelectorAll('select');
+    M.FormSelect.init(selectElem, {});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     var quickAccessNodes = Array.prototype.slice.call(document.querySelectorAll('.quick_access_items'));
 
     for (const item of quickAccessNodes) {

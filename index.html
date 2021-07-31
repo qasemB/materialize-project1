@@ -21,7 +21,7 @@
           <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fas fa-bars"></i></a>
           <ul class="navbar_ul right hide-on-med-and-down main_ul_navbar">
             <li class="tab"><a class="menu_links_desktop" href="#content1">داشبورد</a></li>
-            <li class="tab"><a class="menu_links_desktop" href="#content2">افزودن همسایه</a></li>
+            <li class="tab"><a class="menu_links_desktop active" href="#content2">افزودن همسایه</a></li>
             <li class="tab"><a class="menu_links_desktop" href="#content4">مدیریت همسایگان</a></li>
             <li class="tab"><a class="menu_links_desktop" href="#content3">افزودن هزینه</a></li>
             <li class="tab"><a class="menu_links_desktop" href="#content5">پیام ها</a></li>
@@ -37,8 +37,23 @@
     </ul>
      <!-- header end --------------- -->
 
-     <!-- <section class="main_content"> -->
-       <div id="content1" class="item_content orange">
+     <!-- quick access start -->
+    <div class="fixed-action-btn toolbar hide-on-med-and-up">
+      <a class="btn-floating btn-large cyan darken-3 floating_quick_access">
+        <i class="large fas fa-bars"></i>
+      </a>
+      <ul>
+        <li class="quick_access_items"><a class="btn-floating"><i class="fas fa-user-plus"></i></a></li>
+        <li class="quick_access_items"><a class="btn-floating"><i class="fas fa-users"></i></a></li>
+        <li class="quick_access_items"><a class="btn-floating"><i class="fas fa-money-bill-wave"></i></a></li>
+        <li class="quick_access_items"><a class="btn-floating"><i class="fas fa-envelope"></i></a></li>
+      </ul>
+    </div>
+     <!-- quick access end -->
+
+
+    <!-- dashboard --------------- -->
+       <div id="content1" class="item_content">
          <div class="row">
 
           
@@ -74,23 +89,162 @@
            </div>
          </div>
        </div>
-       <div id="content2" class="item_content yellow"></div>
+    <!-- dashboard --------------- -->
+
+
+
+
+
+
+
+
+
+
+    <!-- add person ---------------- -->
+    <div id="content2" class="item_content active">
+      <div class="row p_1">
+        <form class="main_form col s12 m6 l4">
+          <h5 class="center-align cyan-text text-darken-4">ثبت همسایه جدید</h5>
+
+          <div class="row">
+            <div class="input-field col s12 ">
+              <input id="name" type="text" class="validate">
+              <label class="teal-text text-darken-4" for="name">نام و نام خانوادگی</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s6 ">
+              <input id="phone" type="text" class="validate">
+              <label class="teal-text text-darken-4" for="phone">تماس</label>
+            </div>
+            <div class="input-field col s6 ">
+              <input id="count" type="number" class="validate">
+              <label class="teal-text text-darken-4" for="count">تعداد</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s6">
+              <select>
+                <option value="">انتخاب کنید...</option>
+                <option value="1">طبقه 1</option>
+                <option value="2">طبقه 2</option>
+                <option value="3">طبقه 3</option>
+                <option value="4">طبقه 4</option>
+              </select>
+              <label class="teal-text text-darken-4">طبقه</label>
+            </div>
+            <div class="input-field col s6">
+              <select>
+                <option value="">انتخاب کنید...</option>
+                <option value="1">واحد 1</option>
+                <option value="2">واحد 2</option>
+                <option value="3">واحد 3</option>
+                <option value="4">واحد 4</option>
+              </select>
+              <label class="teal-text text-darken-4">واحد</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s4">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span>ساکن</span>
+                </label>
+              </p>
+            </div>
+            <div class="input-field col s4">
+              <p>
+                <label>
+                  <input name="group1" type="radio" checked />
+                  <span>مالک</span>
+                </label>
+              </p>  
+            </div>
+            <div class="input-field col s4">
+              <p>
+                <label>
+                  <input name="group1" type="radio" checked />
+                  <span>مستاجر</span>
+                </label>
+              </p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s4">
+              <select>
+                <option value="1"> 1</option>
+                <option value="2"> 2</option>
+                <option value="3"> 3</option>
+                <option value="4"> 4</option>
+                <option value="5"> 5</option>
+                <option value="6"> 6</option>
+                <option value="7"> 7</option>
+              </select>
+              <label class="teal-text text-darken-4">روز</label>
+            </div>
+            <div class="input-field col s4">
+              <select>
+                <option value="1"> فروردین</option>
+                <option value="2"> اردیبهشت</option>
+                <option value="3"> خرداد</option>
+                <option value="4"> تیر</option>
+                <option value="5"> مرداد</option>
+                <option value="6"> شهریور</option>
+                <option value="7"> مهر</option>
+              </select>
+              <label class="teal-text text-darken-4">ماه</label>
+            </div>
+            <div class="input-field col s4">
+              <select>
+                <option value="1394"> 1394</option>
+                <option value="1395"> 1395</option>
+                <option value="1396"> 1396</option>
+                <option value="1397"> 1397</option>
+                <option value="1398"> 1398</option>
+                <option value="1399"> 1399</option>
+                <option value="1400"> 1400</option>
+              </select>
+              <label class="teal-text text-darken-4">سال</label>
+            </div>
+          </div>
+
+          <div class="center-align">
+            <button class="btn waves-effect waves-light teal darken-4" type="button" name="action">ثبت
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </div>
+
+
+
+        </form>
+      </div>
+    </div>
+    <!-- add person ---------------- -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
        <div id="content3" class="item_content red"></div>
        <div id="content4" class="item_content purple"></div>
        <div id="content5" class="item_content green"></div>
-     <!-- </section> -->
 
-     <div class="fixed-action-btn toolbar hide-on-med-and-up">
-      <a class="btn-floating btn-large cyan darken-3 floating_quick_access">
-        <i class="large fas fa-bars"></i>
-      </a>
-      <ul>
-        <li class="quick_access_items"><a class="btn-floating"><i class="fas fa-user-plus"></i></a></li>
-        <li class="quick_access_items"><a class="btn-floating"><i class="fas fa-users"></i></a></li>
-        <li class="quick_access_items"><a class="btn-floating"><i class="fas fa-money-bill-wave"></i></a></li>
-        <li class="quick_access_items"><a class="btn-floating"><i class="fas fa-envelope"></i></a></li>
-      </ul>
-    </div>
+
 
 
 

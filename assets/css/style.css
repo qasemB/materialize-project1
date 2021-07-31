@@ -105,9 +105,29 @@ nav .brand-logo img{
     transform: scaleX(1);
 }
 
-#content1{
+.item_content{
     background: rgb(0,188,212);
     background: linear-gradient(180deg, rgba(0,188,212,1) 0%, rgba(0,96,100,1) 25%, rgba(255,255,255,1) 25%);
+}
+
+.p_1{
+    padding: 1rem !important;
+}
+
+.main_form{
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 1.5rem;
+    padding: 1rem !important;
+    backdrop-filter: blur(3px);
+    box-shadow: 0 0 5px black;
+}
+.main_form .row{
+    margin-bottom: 1px !important;
+}
+
+.main_form input{
+    font-family: "BYekan";
+    font-size: 0.9rem;
 }
 
 .px_4{
