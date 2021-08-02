@@ -21,9 +21,9 @@
           <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fas fa-bars"></i></a>
           <ul class="navbar_ul right hide-on-med-and-down main_ul_navbar">
             <li class="tab"><a class="menu_links_desktop" href="#content1">داشبورد</a></li>
-            <li class="tab"><a class="menu_links_desktop active" href="#content2">افزودن همسایه</a></li>
-            <li class="tab"><a class="menu_links_desktop" href="#content4">مدیریت همسایگان</a></li>
-            <li class="tab"><a class="menu_links_desktop" href="#content3">افزودن هزینه</a></li>
+            <li class="tab"><a class="menu_links_desktop" href="#content2">افزودن همسایه</a></li>
+            <li class="tab"><a class="menu_links_desktop active" href="#content3">مدیریت همسایگان</a></li>
+            <li class="tab"><a class="menu_links_desktop" href="#content4">افزودن هزینه</a></li>
             <li class="tab"><a class="menu_links_desktop" href="#content5">پیام ها</a></li>
           </ul>
         </nav>    
@@ -31,8 +31,8 @@
     <ul class="sidenav main_ul_navbar" id="mobile-demo">
         <li class="tab"><a class="menu_item_list" href="#content1">داشبورد</a></li>
         <li class="tab"><a class="menu_item_list" href="#content2">افزودن همسایه</a></li>
-        <li class="tab"><a class="menu_item_list" href="#content4">مدیریت همسایگان</a></li>
-        <li class="tab"><a class="menu_item_list" href="#content3">افزودن هزینه</a></li>
+        <li class="tab"><a class="menu_item_list" href="#content3">مدیریت همسایگان</a></li>
+        <li class="tab"><a class="menu_item_list" href="#content4">افزودن هزینه</a></li>
         <li class="tab"><a class="menu_item_list" href="#content5">پیام ها</a></li>
     </ul>
      <!-- header end --------------- -->
@@ -101,9 +101,12 @@
 
 
     <!-- add person ---------------- -->
-    <div id="content2" class="item_content active">
+    <div id="content2" class="item_content">
       <div class="row p_1">
-        <form class="main_form col s12 m6 l4">
+
+        <div class="col m2 l3 hide-on-small-and-down"></div>
+
+        <form class="main_form col s12 m8 l6">
           <h5 class="center-align cyan-text text-darken-4">ثبت همسایه جدید</h5>
 
           <div class="row">
@@ -222,6 +225,9 @@
 
 
         </form>
+
+        <div class="col m2 l3 hide-on-small-and-down"></div>
+
       </div>
     </div>
     <!-- add person ---------------- -->
@@ -239,8 +245,181 @@
 
 
 
+    <!-- manage persons------------------ -->
+    
+    <div id="content3" class="item_content active">
+      <div class="row p_1">
+        <div class="col s12">
+          <div class="main_table">
+            <h5 class="center-align cyan-text text-darken-4">مدیریت همسایگان</h5>
+            <table>
+              <thead>
+                <tr>
+                  <th>نام و نام خانوادگی</th>
+                  <th>تماس</th>
+                  <th>تعداد</th>
+                  <th>طبقه</th>
+                  <th>واحد</th>
+                  <th>وضعیت سکونت</th>
+                  <th>وضعیت مالکیت</th>
+                  <th>تاریخ سکونت</th>
+                  <th>عملیات</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>قسم</td>
+                  <td>بساکی</td>
+                  <td>3نفر</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>ساکن</td>
+                  <td>مالک</td>
+                  <td>3روز پیش</td>
+                  <td>
+                    <i class="fas fa-trash-alt red-text"></i>
+                    <i class="fas fa-edit orange-text"></i>
+                  </td>
+                </tr>
+                <tr>
+                  <td>عباس</td>
+                  <td>بساکی</td>
+                  <td>2نفر</td>
+                  <td>1</td>
+                  <td>2</td>
+                  <td>ساکن</td>
+                  <td>مالک</td>
+                  <td>3روز پیش</td>
+                  <td>
+                    <i class="fas fa-trash-alt red-text"></i>
+                    <i class="fas fa-edit orange-text"></i>
+                  </td>
+                </tr>
+                <tr>
+                  <td>محمد</td>
+                  <td>محمدی</td>
+                  <td>4نفر</td>
+                  <td>1</td>
+                  <td>3</td>
+                  <td>ساکن</td>
+                  <td>مالک</td>
+                  <td>3روز پیش</td>
+                  <td>
+                    <i class="fas fa-trash-alt red-text"></i>
+                    <i class="fas fa-edit orange-text"></i>
+                  </td>
+                </tr>
+                <tr>
+                  <td>اشکان</td>
+                  <td>رضایی</td>
+                  <td>5نفر</td>
+                  <td>2</td>
+                  <td>4</td>
+                  <td>ساکن</td>
+                  <td>مالک</td>
+                  <td>3روز پیش</td>
+                  <td>
+                    <i class="fas fa-trash-alt red-text"></i>
+                    <i class="fas fa-edit orange-text"></i>
+                  </td>
+                </tr>
+                <tr>
+                  <td>مهدی</td>
+                  <td>دارابی</td>
+                  <td>2نفر</td>
+                  <td>2</td>
+                  <td>5</td>
+                  <td>ساکن</td>
+                  <td>مستاجر</td>
+                  <td>3روز پیش</td>
+                  <td>
+                    <i class="fas fa-trash-alt red-text"></i>
+                    <i class="fas fa-edit orange-text"></i>
+                  </td>
+                </tr>
+                <tr>
+                  <td>جواد</td>
+                  <td>حسینی</td>
+                  <td>2نفر</td>
+                  <td>2</td>
+                  <td>6</td>
+                  <td>ساکن</td>
+                  <td>مالک</td>
+                  <td>3روز پیش</td>
+                  <td>
+                    <i class="fas fa-trash-alt red-text"></i>
+                    <i class="fas fa-edit orange-text"></i>
+                  </td>
+                </tr>
+                <tr>
+                  <td>میلاد</td>
+                  <td>توانا</td>
+                  <td>3نفر</td>
+                  <td>3</td>
+                  <td>7</td>
+                  <td>ساکن</td>
+                  <td>مالک</td>
+                  <td>3روز پیش</td>
+                  <td>
+                    <i class="fas fa-trash-alt red-text"></i>
+                    <i class="fas fa-edit orange-text"></i>
+                  </td>
+                </tr>
+                <tr>
+                  <td>سامان</td>
+                  <td>عسگری</td>
+                  <td>2نفر</td>
+                  <td>3</td>
+                  <td>8</td>
+                  <td>ساکن</td>
+                  <td>مستاجر</td>
+                  <td>3روز پیش</td>
+                  <td>
+                    <i class="fas fa-trash-alt red-text"></i>
+                    <i class="fas fa-edit orange-text"></i>
+                  </td>
+                </tr>
+                <tr>
+                  <td>ناصر</td>
+                  <td>نیازی</td>
+                  <td>3نفر</td>
+                  <td>3</td>
+                  <td>9</td>
+                  <td>ساکن</td>
+                  <td>مالک</td>
+                  <td>3روز پیش</td>
+                  <td>
+                    <i class="fas fa-trash-alt red-text"></i>
+                    <i class="fas fa-edit orange-text"></i>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- manage persons------------------ -->
 
-       <div id="content3" class="item_content red"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
        <div id="content4" class="item_content purple"></div>
        <div id="content5" class="item_content green"></div>
 
