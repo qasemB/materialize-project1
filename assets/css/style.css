@@ -115,7 +115,7 @@ nav .brand-logo img{
 }
 
 .main_form{
-    background: rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0.85);
     border-radius: 1.5rem;
     padding: 1rem !important;
     backdrop-filter: blur(3px);
@@ -133,6 +133,27 @@ nav .brand-logo img{
 .px_4{
 padding-left: 4rem !important;
 padding-right: 4rem !important;
+}
+
+.main_table{
+  background: rgba(255, 255, 255, 0.85); 
+  border-radius: 1.5rem;
+  padding: 1rem !important;
+  backdrop-filter: blur(3px);
+  box-shadow: 0 0 5px black;
+  overflow: auto; 
+}
+
+.main_table thead{
+    background: #006064;
+    color: white;
+    border-radius: 0.5rem;
+}
+.main_table tr{
+    padding: 0 !important;
+}
+.main_table table.highlight > tbody > tr:hover{
+  background: #0060643a;
 }
 
 @media(min-width:601px){
