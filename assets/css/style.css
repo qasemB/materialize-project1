@@ -142,6 +142,7 @@ padding-right: 4rem !important;
   backdrop-filter: blur(3px);
   box-shadow: 0 0 5px black;
   overflow: auto; 
+  max-height: calc(100vh - 1.1rem - 68px);
 }
 
 .main_table thead{
@@ -163,9 +164,32 @@ padding-right: 4rem !important;
     }
 }
 
+@media(max-width:993px){
+    .main_table th , .main_table td {
+        padding: 0.80rem 0.3rem !important;
+    }
+}
+
 @media(min-width:992px){
     nav .brand-logo{
         right: unset !important;
         left: 0.5rem !important;
     }
+}
+
+/* scrollbars ------------------ */
+::-webkit-scrollbar{
+    width: 5px !important;
+}
+
+::-webkit-scrollbar-track{
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: #555;
 }

@@ -14,32 +14,21 @@ document.addEventListener('DOMContentLoaded', function() {
         toolbarEnabled: true,
     });
 
-
-
-
-
-
-
-
     var selectElem = document.querySelectorAll('select');
     M.FormSelect.init(selectElem, {});
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    var autoCompleteElem = document.querySelectorAll('.autocomplete');
+    M.Autocomplete.init(autoCompleteElem , {
+        data:{
+            "شارژ": null,
+            "آب مشاع": null,
+            "آب": null,
+            "برق مشاع": null,
+            "برق": null,
+            "گاز": null,  
+        }
+    })
 
 
     var quickAccessNodes = Array.prototype.slice.call(document.querySelectorAll('.quick_access_items'));
