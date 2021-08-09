@@ -30,6 +30,9 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     })
 
+    var collapsibleElem = document.querySelectorAll('.collapsible');
+    M.Collapsible.init(collapsibleElem , {})
+
 
     var quickAccessNodes = Array.prototype.slice.call(document.querySelectorAll('.quick_access_items'));
 
